@@ -14,7 +14,6 @@ class m161221_095231_image extends Migration
             'id' => $this->primaryKey(),
             'name' => $this->string()->notNull()->unique(),
             'path' => $this->string()->notNull()->unique(),
-            'video_id' => $this->integer() -> notNull(),
             'created_at' => $this->integer(),
             'created_by' => $this->integer(),
             'updated_at' => $this->integer(),

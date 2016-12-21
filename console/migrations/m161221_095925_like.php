@@ -15,8 +15,6 @@ class m161221_095925_like extends Migration
             'video_id' => $this->integer(),
             'created_at' => $this->integer(),
             'created_by' => $this->integer(),
-            'updated_at' => $this->integer(),
-            'updated_by' => $this->integer(),
         ], $tableOptions);
     }
 

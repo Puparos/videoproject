@@ -37,6 +37,9 @@ class m961221_101135_relations extends Migration
         $this->dropForeignKey('fk_topic_section_idx', '{{%topic}}');
         $this->dropIndex('fk_topic_section_idx', '{{%topic}}');
 
+        $this->dropForeignKey('fk_section-image_idx', '{{%section}}');
+        $this->dropIndex('fk_section-image', '{{%section}}');
+
         $this->dropForeignKey('fk_video_topic_idx', '{{%video}}');
         $this->dropIndex('fk_video_topic_idx', '{{%video}}');
 
