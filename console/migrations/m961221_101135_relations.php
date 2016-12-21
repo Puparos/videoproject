@@ -15,6 +15,9 @@ class m961221_101135_relations extends Migration
         //image-video
         $this->createIndex('fk_image_video_idx', '{{%image}}', 'video_id');
         $this->addForeignKey('fk_image_video', '{{%image}}', 'video_id', '{{%video}}', 'id');
+        //section-image
+        $this->createIndex('fk_section-image_idx', '{{%section}}', 'image_id');
+        $this->addForeignKey('fk_section-image', '{{%section}}', 'image_id', '{{%image}}', 'id');
         //like-video
         $this->createIndex('fk_like_video_idx', '{{%like}}', 'video_id');
         $this->addForeignKey('fk_like_video', '{{%like}}', 'video_id', '{{%video}}', 'id');
