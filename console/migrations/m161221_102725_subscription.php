@@ -12,8 +12,8 @@ class m161221_102725_subscription extends Migration
         }
 
         $this->createTable('{{%subscription}}', [
-            'user_id' => $this->integer(true),
-            'section_id' => $this->integer(true),
+            'user_id' => $this->integer(),
+            'section_id' => $this->integer(),
             'PRIMARY KEY (`user_id`, `section_id`)',
         ], $tableOptions);
     }
